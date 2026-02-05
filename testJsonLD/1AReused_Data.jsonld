@@ -237,6 +237,23 @@
             },
             "ftr:input": "data_access in maDMP + access_right in destination repository",
             "ftr:output": "pass/fail"
+        },
+        {
+            "@context": {
+                "dcterms": "http://purl.org/dc/terms/",
+                "ftr": "https://w3id.org/ftr#",
+                "sio": "http://semanticscience.org/resource/"
+            },
+            "@id": "https://example.org/test/T-DCSC-license-match",
+            "@type": "ftr:Test",
+            "dcterms:identifier": "T-DCSC",
+            "dcterms:title": "T-DCSC (reused data license matches destination)",
+            "dcterms:description": "Checks if the license of the repository is the one mentioned in the dmp.",
+            "sio:is-implementation-of": {
+                "@id": "https://example.org/metric/data.reused.feas.3"
+            },
+            "ftr:input": "license in maDMP JSON + license in destination repository",
+            "ftr:output": "pass/fail"
         }
     ]
 }

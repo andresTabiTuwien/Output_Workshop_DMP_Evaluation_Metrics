@@ -13,6 +13,8 @@
 | data.reused.feas.1 | Repository Reused Data PID | [Go](#metric-repository-reused-data-pid) |
 | data.reused.feas.2 | Repository Reused Data Access | [Go](#metric-repository-reused-data-access) |
 | data.reused.feas.2 | Repository Reused Data Access | [Go](#metric-repository-reused-data-access) |
+| data.reused.feas.3 | Repository Reused Data License | [Go](#metric-repository-reused-data-license) |
+
 
 
 
@@ -646,4 +648,60 @@ pass/fail
 2. For each reused dataset, retrieve its record from the destination repository.  
 3. Extract the repository access rights value.  
 4. Compare maDMP `data_access` with repository `access_right`.  
+5. Pass if all values match; otherwise fail.
+
+
+
+## Metric: Repository Reused Data License
+
+**Metric ID:** data.reused.feas.3  
+**Persistent URI:** https://example.org/metric/data.reused.feas.3  
+**Dimension:** Feasibility  
+
+### Title
+Repository Reused Data License
+
+### Narrative
+Validates that license of the reused dataset match those of the destination.
+
+### Intended Outcome
+Determine whether the license declared for reused datasets in the machine-actionable Data Management Plan (maDMP) matches the license recorded in the destination repository.
+
+### Applies To
+- maDMP JSON (dataset reuse declarations)  
+- Target repository endpoint  
+
+### Success Criterion
+For each dataset declared as reused (`is_reused = true`), the license value in the maDMP matches the license value in the destination repository record.
+
+### Failure Criterion
+At least one reused dataset has a license value in the maDMP that does not match the license recorded in the destination repository.
+
+### Expected Result Type
+Boolean (pass/fail)
+
+---
+
+### Associated Test
+
+#### Test: Reused data license matches destination
+
+**Test ID:** T-DCSC  
+**Persistent URI:** https://example.org/test/T-DCSC-license-match  
+
+**Description**  
+Checks if the license of the repository is the one mentioned in the DMP.
+
+**Input**  
+- license in maDMP JSON  
+- license in destination repository (e.g., Zenodo)
+
+**Output**  
+pass/fail
+
+**Algorithm (Suggested)**  
+1. Extract reused datasets from maDMP (`is_reused = true`).  
+2. For each reused dataset, retrieve its record from the destination repository.  
+3. Extract license value from repository record.  
+4. Compare with maDMP license value.  
 5. Pass if all values match; otherwise fail.
