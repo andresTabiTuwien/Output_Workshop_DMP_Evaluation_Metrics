@@ -1,0 +1,123 @@
+{
+    "tests": [
+        {
+            "@context": {
+                "dqv": "http://www.w3.org/ns/dqv#",
+                "dcterms": "http://purl.org/dc/terms/",
+                "ftr": "https://w3id.org/ftr#",
+                "sio": "http://semanticscience.org/resource/"
+            },
+            "@id": "https://example.org/test/madmp-reused-datasets-declared-json",
+            "@type": "ftr:Test",
+            "dcterms:title": "Check for reused dataset declaration in maDMP JSON",
+            "dcterms:description": "Given a maDMP JSON document, inspect dataset objects and verify the presence of a field indicating whether the dataset is reused.",
+            "sio:is-implementation-of": {
+                "@id": "https://example.org/metric/madmp-reused-datasets-declared"
+            },
+            "ftr:input": "maDMP JSON document",
+            "ftr:output": "pass/fail"
+        },
+        {
+            "@context": {
+                "dcterms": "http://purl.org/dc/terms/",
+                "ftr": "https://w3id.org/ftr#",
+                "sio": "http://semanticscience.org/resource/"
+            },
+            "@id": "https://example.org/test/T-DCSC",
+            "@type": "ftr:Test",
+            "dcterms:identifier": "T-DCSC",
+            "dcterms:title": "T-DCSC",
+            "dcterms:description": "Check if is_reused includes dataset_id (identifier, type).",
+            "sio:is-implementation-of": {
+                "@id": "https://example.org/metric/data.reused.co.2"
+            },
+            "ftr:input": "maDMP JSON",
+            "ftr:output": "pass/fail"
+        },
+        {
+            "@context": {
+                "dcterms": "http://purl.org/dc/terms/",
+                "ftr": "https://w3id.org/ftr#",
+                "sio": "http://semanticscience.org/resource/"
+            },
+            "@id": "https://example.org/test/T-DCSC-license",
+            "@type": "ftr:Test",
+            "dcterms:identifier": "T-DCSC",
+            "dcterms:title": "T-DCSC (license for reused datasets)",
+            "dcterms:description": "Check if is_reused includes license (ref and start_date).",
+            "sio:is-implementation-of": {
+                "@id": "https://example.org/metric/data.reused.co.3"
+            },
+            "ftr:input": "maDMP JSON",
+            "ftr:output": "pass/fail"
+        },
+        {
+            "@context": {
+                "dcterms": "http://purl.org/dc/terms/",
+                "ftr": "https://w3id.org/ftr#",
+                "sio": "http://semanticscience.org/resource/"
+            },
+            "@id": "https://example.org/test/T-DCSC-distribution-present",
+            "@type": "ftr:Test",
+            "dcterms:identifier": "T-DCSC",
+            "dcterms:title": "T-DCSC (distribution present)",
+            "dcterms:description": "Checks the distribution.",
+            "sio:is-implementation-of": {
+                "@id": "https://example.org/metric/data.reused.co.4"
+            },
+            "ftr:input": "maDMP JSON",
+            "ftr:output": "pass/fail"
+        },
+        {
+            "@context": {
+                "dcterms": "http://purl.org/dc/terms/",
+                "ftr": "https://w3id.org/ftr#",
+                "sio": "http://semanticscience.org/resource/"
+            },
+            "@id": "https://example.org/test/T-DCSC-distribution-access",
+            "@type": "ftr:Test",
+            "dcterms:identifier": "T-DCSC",
+            "dcterms:title": "T-DCSC (distribution access info)",
+            "dcterms:description": "Checks whether distribution includes access information (e.g., access/download URL or equivalent).",
+            "sio:is-implementation-of": {
+                "@id": "https://example.org/metric/data.reused.co.4"
+            },
+            "ftr:input": "maDMP JSON",
+            "ftr:output": "pass/fail"
+        },
+        {
+            "@context": {
+                "dcterms": "http://purl.org/dc/terms/",
+                "ftr": "https://w3id.org/ftr#",
+                "sio": "http://semanticscience.org/resource/"
+            },
+            "@id": "https://example.org/test/T-DCSC-distribution-title",
+            "@type": "ftr:Test",
+            "dcterms:identifier": "T-DCSC",
+            "dcterms:title": "T-DCSC (distribution title)",
+            "dcterms:description": "Checks if there is title of distribution.",
+            "sio:is-implementation-of": {
+                "@id": "https://example.org/metric/data.reused.co.4"
+            },
+            "ftr:input": "maDMP JSON",
+            "ftr:output": "pass/fail"
+        },
+        {
+            "@context": {
+                "dcterms": "http://purl.org/dc/terms/",
+                "ftr": "https://w3id.org/ftr#",
+                "sio": "http://semanticscience.org/resource/"
+            },
+            "@id": "https://example.org/test/T-DCSC-access",
+            "@type": "ftr:Test",
+            "dcterms:identifier": "T-DCSC",
+            "dcterms:title": "T-DCSC (access rights for reused datasets)",
+            "dcterms:description": "Checks the data_access (open, shared, closed).",
+            "sio:is-implementation-of": {
+                "@id": "https://example.org/metric/data.reused.co.5"
+            },
+            "ftr:input": "maDMP JSON",
+            "ftr:output": "pass/fail"
+        }
+    ]
+}
