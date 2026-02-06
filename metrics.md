@@ -1,18 +1,18 @@
 # Metrics Catalog
 
-| Metric ID | Title | Jump to Metric |
-|----------|------|---------------|
-| data.reused.co.1 | [maDMP declares reused datasets](#metric-madmp-declares-reused-datasets) | [Go] |
-| data.reused.co.2 | Reused Data PID | [Go](#metric-reused-data-pid) |
-| data.reused.co.3 | Reused Data License | [Go](#metric-reused-data-license) |
-| data.reused.co.4 | Reused Data Source | [Go](#metric-reused-data-source) |
-| data.reused.co.5 | Reused Data Access | [Go](#metric-reused-data-access) |
-| data.reused.co.6 | Reused Data Personal | [Go](#metric-reused-data-personal) |
-| data.reused.co.7 | Reused Data Sensitive | [Go](#metric-reused-data-sensitive) |
-| data.reused.co.8 | Reused Data URL | [Go](#metric-reused-data-url) |
-| data.reused.feas.1 | Repository Reused Data PID | [Go](#metric-repository-reused-data-pid) |
-| data.reused.feas.2 | Repository Reused Data Access | [Go](#metric-repository-reused-data-access) |
-| data.reused.feas.3 | Repository Reused Data License | [Go](#metric-repository-reused-data-license) |
+| Metric ID | Title | 
+|----------|------|
+| data.reused.co.1 | [maDMP declares reused datasets](#metric-madmp-declares-reused-datasets) |
+| data.reused.co.2 | [Reused Data PID](#metric-reused-data-pid) |
+| data.reused.co.3 | [Reused Data License](#metric-reused-data-license) |
+| data.reused.co.4 | [Reused Data Source](#metric-reused-data-source) |
+| data.reused.co.5 | [Reused Data Access](#metric-reused-data-access) |
+| data.reused.co.6 | [Reused Data Personal](#metric-reused-data-personal) |
+| data.reused.co.7 | [Reused Data Sensitive](#metric-reused-data-sensitive) |
+| data.reused.co.8 | [Reused Data URL](#metric-reused-data-url) |
+| data.reused.feas.1 | [Repository Reused Data PID](#metric-repository-reused-data-pid) |
+| data.reused.feas.2 | [Repository Reused Data Access](#metric-repository-reused-data-access) |
+| data.reused.feas.3 | [Repository Reused Data License](#metric-repository-reused-data-license) |
 
 ---
 
